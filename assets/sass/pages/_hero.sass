@@ -1,0 +1,63 @@
+#hero
+  background-color: var(--bg-color-dark)
+  border-bottom-left-radius: 100px
+  border-bottom-right-radius: 100px
+  background-image: url(../images/bg.webp)
+  background-size: cover
+  background-repeat: no-repeat
+  padding-bottom: 30px
+  padding-top: 30px !important
+  .container
+    @include flex-full(space-between, center, row, nowrap, 20px)
+    .content
+      h1
+        font-size: 42px
+      p
+        font-weight: 300
+        &.description1
+          padding-bottom: 15px
+          font-size: 18px
+        &.description2
+          padding-bottom: 35px
+          font-size: 18px
+        &.slogan
+          padding-bottom: 15px
+          font-weight: 600
+          font-size: 22px
+        &.text
+          font-weight: 600
+      a
+        button
+          padding: 15px 60px
+    .hero-img
+      max-width: 500px
+      .dart_phone
+        display: none
+
+@media screen and (max-width: 1175px)
+  #hero
+    position: relative
+    padding-bottom: 200px !important
+    border-bottom-left-radius: 40px
+    border-bottom-right-radius: 40px
+    .container
+      flex-direction: column
+      .content
+        p.slogan
+          font-size: 16px !important
+          font-weight: 500
+        a
+          margin-top: 10px !important
+          display: block
+          width: fit-content
+          margin: auto
+      .hero-img
+        position: absolute
+        max-width: 350px
+        bottom: -50px
+        padding: 0 30px
+        margin-left: 15px
+        .dart_pc
+          display: none
+        .dart_phone
+          display: block

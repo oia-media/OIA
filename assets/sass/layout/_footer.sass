@@ -1,0 +1,66 @@
+footer
+  padding: 60px 60px 15px
+  text-align: center
+  background: url(../images/bg.webp) no-repeat center
+  background-size: cover
+  background-color: var(--bg-color-dark)
+  border-top: 3px solid var(--slogan-color)
+  .container
+    @include flex-full(center, center, column, nowrap, 30px)
+    .content
+      p
+        &.title
+          color: var(--text-color-light)
+          font-size: 36px
+          font-weight: 600
+        &.description
+          font-weight: 300
+    .btns
+      @include flex-full(center, center, column, nowrap, 15px)
+      a
+        button
+          padding: 15px 60px
+          &.hire-btn
+            padding: 15px 50px
+            background: var(--white-bg)
+            color: var(--slogan-color)
+            &:hover
+              box-shadow: var(--white-bg) 0px 4px 20px
+    .social-platforms
+      @include flex-full(space-between, center, row, nowrap, 0px)
+      .platform
+        @include flex-full(center, center, row, nowrap, 0)
+        padding: 10px
+        width: 60px
+        height: 60px
+        border-radius: 10px
+        background: var(--main-color)
+        a
+          font-size: 30px
+    .rights
+      .icon
+        width: 150px
+        margin: auto
+      p
+        padding-top: 10px
+        font-size: 18px
+      .developer
+        font-family: 'Almarai', 'Cairo', sans-serif
+        padding-top: 10px
+        @include flex-full(center, center, row, nowrap, 5px)
+        p
+          padding-top: 0
+        a
+          font-size: 18px
+          font-weight: 600
+          color: var(--slogan-color)
+          text-decoration: underline
+
+@media screen and (max-width: 512px)
+  footer
+    .social-platforms
+      gap: 0 !important
+    button
+      padding: 15px 40px !important
+    .developer
+      display: block !important

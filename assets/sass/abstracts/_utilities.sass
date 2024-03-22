@@ -1,0 +1,18 @@
+@mixin flex-full($justify, $align, $dir, $wrap, $gap)
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $dir
+  flex-wrap: $wrap
+  gap: $gap
+
+@mixin flex($justify, $align, $dir)
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $dir
+
+%center
+  top: 50% !important
+  left: 50% !important
+  transform: translate(-50%, -50%) !important

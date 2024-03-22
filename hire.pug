@@ -1,0 +1,101 @@
+- const homeLink = 'index.html#hero'
+- const aboutLink = 'index.html#about'
+- const featuresLink = 'index.html#features'
+- const clientsLink = 'index.html#clients'
+- const teamLink = 'index.html#team'
+- const meetLink = 'index.html#contact-home'
+- const opinionsLink = 'index.html#opinions'
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="OIA - Marketing Solutions | We're all about making your online presence shine. Whether you're just starting out or already a big player, we've got your back with fresh and creative strategies to get you noticed. From social media to search engine smarts, we've got the tools and the team to help your business grow online.")
+    link(rel="shortcut icon", href="assets/images/favicon.ico", type="image/x-icon")
+    include ./includes/stylesheets
+    title OIA - Marketing Solutions | Get Hired
+    script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js")
+  body
+    .wrapper#hirePage
+      main
+        include ./includes/navbar
+        section.hire
+          .container(style="text-align:center")
+            form(method="post", id="hire_form")
+              .fields-container(style="gap:25px")
+                .title-container(style="text-align:center")
+                  h1(data-translate="hire-title").title Become a member of our team now !
+                  p(data-translate="hire-description").description Fill the form below to join our team
+                .field
+                  .row
+                    .input-field
+                      .label
+                        .icon
+                          i.fas.fa-user
+                        label(for="name", data-translate="hire-input1") Name 
+                      .input
+                        input(type="text", name="name", id="name", placeholder="Enter your name", required)
+                .field
+                  .row
+                    .input-field
+                      .label
+                        .icon
+                          i.fas.fa-phone
+                        label(for="phone", data-translate="hire-input6") Phone number
+                      .input
+                        input(type="text", name="phone", id="phone", placeholder="Enter your phone", required)
+                .field.date
+                  .row(style="margin-top: 0")
+                    .input-field
+                      .label
+                        .icon
+                          i.far.fa-calendar
+                        label(for="dob", data-translate="hire-input2") Date Of Birth 
+                      .input
+                        input#date(type="date", name="dob", required)
+                .field
+                  .row
+                    .input-field
+                      .label
+                        .icon
+                          i.fas.fa-venus-mars
+                        label(for="scale", data-translate="hire-input3") Gender
+                      .input
+                        select(name="gender", id="gender", class="form-select", required)
+                          option(value="Male", data-translate="hire-input3-option1") Male
+                          option(value="Female", data-translate="hire-input3-option2") Female
+                .field
+                  .row
+                    .input-field
+                      .label
+                        .icon
+                          i.fas.fa-briefcase
+                        label(for="profession", data-translate="hire-input4") Your Profession
+                      .input
+                        select(name="profession", id="profession", class="form-select", required)
+                          option(value="Marketing Specialists") Marketing Specialists
+                          option(value="Performance Marketer") Performance Marketer
+                          option(value="Social Media Specialist") Social Media Specialist
+                          option(value="Sales representatives") Sales representatives
+                          option(value="Copywriter") Copywriter
+                          option(value="Graphic Designer") Graphic Designer
+                          option(value="Web Developer") Web Developer
+                .field
+                  .row
+                    .input-field
+                      .label
+                        .icon
+                          i.fas.fa-gears
+                        label(for="exp", data-translate="hire-input5") Years Of Experience
+                      .input
+                        select(name="exp", id="exp", class="form-select", required)
+                          option(value="Less than 1 year", data-translate="hire-input5-option1") Less than 1 year
+                          option(value="1 year", data-translate="hire-input5-option2") 1 year
+                          option(value="2 years", data-translate="hire-input5-option3") 2 years
+                          option(value="3 years", data-translate="hire-input5-option4") 3 years
+                          option(value="More than 3 years", data-translate="hire-input5-option5") More than 3 years
+                .btn-submit
+                  button(type="submit", id="send", data-translate="hire-btn") Send your data
+    include ./includes/footer
+    script(src="assets/js/hire.js")
+//- pug "H:\OAI Omar yehia\hire.pug" -w -o "H:\OAI Omar yehia"

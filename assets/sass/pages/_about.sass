@@ -1,0 +1,95 @@
+#about
+  padding-top: 120px
+  padding-bottom: 0
+  color: var(--text-color-dark)
+  .container
+    @include flex-full(center, flex-end, row, nowrap, 50px)
+    .stats,
+    .content
+      width: calc( (100% / 2) - 25px )
+    .stats
+      text-align: center
+      p
+        &.a
+          font-size: 20px
+          font-weight: 600
+        &.title
+          font-size: 48px
+          font-weight: 800
+      .cards
+        @include flex-full(center, flex-start, row, wrap, 20px)
+        .card
+          text-align: start
+          width: calc(50% - 10px)
+          background: var(--bg-color-dark)
+          padding: 15px 0 5px 0
+          color: var(--text-color-light)
+          border-radius: 10px
+          background-image: url(../images/bg.webp)
+          background-position: center center
+          background-repeat: no-repeat
+          background-size: 300%
+          p
+            &.name
+              font-size: 20px
+              font-weight: 600
+              padding-bottom: 15px
+            &.number
+              font-size: 40px
+              font-weight: 700
+              color: var(--slogan-color)
+            &.money
+              position: relative
+              &::after
+                content: "k"
+    .content
+      p
+        &.a
+          font-size: 24px
+          font-weight: 700
+          padding-bottom: 15px
+        &.b
+          font-size: 16px
+          font-weight: 300
+          color: var(--text-gray)
+          line-height: 1.5
+          padding-bottom: 40px
+        &.c
+          font-size: 15px
+          padding-bottom: 10px
+      a
+        button
+          padding: 15px 60px
+
+@media screen and (max-width: 1050px)
+  #about
+    .container
+      flex-direction: column
+      .stats,
+      .content
+        width: 100%
+
+@media screen and (max-width: 512px)
+  #about
+    padding: 80px 15px 10px !important
+    p.a
+      font-size: 18px !important
+    p.c
+      text-align: center
+      padding-bottom: 0 !important
+    a
+      margin-top: 10px !important
+      display: block
+      width: fit-content
+      margin: auto
+      button
+        padding: 15px 50px
+    p.title
+      font-size: 32px !important
+    .cards
+      gap: 10px !important
+      .card
+        width: calc(50% - 5px) !important
+        p.name
+          padding-bottom: 0 !important
+          font-size: 14px !important

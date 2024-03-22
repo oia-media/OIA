@@ -1,0 +1,96 @@
+.team-top-wave
+  margin-bottom: -15px
+  position: relative
+  z-index: -1
+.team-down-wave
+  margin-top: -15px
+  position: relative
+  z-index: -1
+#team
+  padding: 0 60px
+  background: var(--bg-color-dark)
+  text-align: center
+  .container
+    .title
+      color: var(--text-color-light)
+      font-weight: 600
+    .cards
+      padding-top: 40px
+      @include flex-full(center, center, row, wrap, 60px)
+      .row
+        @include flex-full(center, center, row, nowrap, 60px)
+        .card
+          text-align: center
+          .icon
+            width: 130px
+            height: 130px
+            margin: auto
+          .about
+            margin-top: 10px
+            p
+              &.name
+                font-weight: 600
+              &.job
+                font-weight: 400
+                color: var(--slogan-color)
+                font-size: 14px
+    .description
+      padding-top: 40px
+      margin: auto
+      p
+        padding-top: 30px
+
+.team
+  background-color: var(--bg-color-dark)
+  padding-bottom: 0px !important
+  .container
+    padding-bottom: 30px
+    .title
+      font-weight: 600
+      font-size: 42px
+    .member
+      margin-top: 50px
+      @include flex-full(flex-start, center, row, nowrap, 50px)
+      .img
+        img
+          width: 140px
+      .data
+        p
+          &.name
+            font-weight: 600
+            font-size: 26px
+            padding-bottom: 5px
+          &.job
+            font-size: 18px
+            color: var(--slogan-color)
+            font-weight: 400
+          &.description
+            font-size: 16px
+            color: var(--text-gray)
+            font-weight: 400
+            margin-top: 15px
+            // text-align: center
+  footer
+    background-image: none
+    padding-top: 30px
+    padding-bottom: 0
+
+@media screen and (max-width: 760px)
+  #team
+    .container
+      .cards
+        gap: 25px
+        .row
+          gap: 25px
+  .team
+    .container
+      .member
+        flex-direction: column
+        justify-content: center
+        gap: 10px
+        .img
+          max-width: 140px
+        .data
+          text-align: center
+          .description
+            text-align: start

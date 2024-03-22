@@ -1,0 +1,50 @@
+.opinions
+  .container
+    .title
+      text-align: center
+      font-size: 40px
+      font-weight: 600
+    .cards
+      margin: 30px auto 0
+      max-width: 900px
+      @include flex-full(center, center, column, wrap, 60px)
+      .row
+        @include flex-full(space-between, center, row, nowrap, 60px)
+        width: 100%
+        .card
+          padding: 30px
+          @include flex-full(center, flex-start, column, nowrap, 10px)
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+          border-radius: 20px
+          width: calc((100% / 2) - 20px)
+          .data
+            @include flex-full(flex-start, center, row, nowrap, 10px)
+            .icon
+              @include flex(center,center,row)
+              width: 75px
+              height: 75px
+              border-radius: 50%
+              padding: 10px
+              border: 2px solid var(--bg-color-dark)
+              img
+                width: 40px
+                height: 40px
+            .about
+              p
+                color: var(--text-color-dark)
+                &.name
+                  font-size: 20px
+                  font-weight: 600
+                &.job
+                  font-weight: 300
+          .description
+            color: var(--text-gray)
+
+@media screen and (max-width: 900px)
+  #opinions
+    .container
+      .cards
+        .row
+          flex-direction: column
+          .card
+            width: 100%

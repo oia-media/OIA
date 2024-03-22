@@ -1,0 +1,123 @@
+section
+  &#services
+    padding-top: 200px
+    padding-bottom: 0
+    background: var(--white-bg)
+    color: var(--text-color-dark)
+    .container
+      .title
+        color: var(--text-color-dark)
+        font-weight: 800
+      .cards
+        padding-top: 50px
+        @include flex-full(center, flex-start, row, wrap, 60px)
+        .row
+          @include flex-full(center, flex-start, row, nowrap, 60px)
+          a
+            color: inherit
+            .card
+              text-align: center
+              width: 180px
+              .icon
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+                padding: 30px
+                border-radius: 20px
+                margin-bottom: 20px
+                svg
+                  font-size: 40px
+              p.name
+                font-size: 16px
+  &.serv
+    padding: 0
+    .content
+      .container
+        @include flex-full(flex-start, flex-start, row, nowrap, 40px)
+        .logo
+          text-align: center
+          padding: 60px
+          border-radius: 50%
+          .icon
+            width: 60px
+            height: 60px
+            svg
+              font-size: 60px
+        .child-col
+          p
+            &.name
+              font-size: 40px
+              font-weight: 800
+            &.description
+              color: var(--text-gray)
+          span
+            font-size: 20px
+            margin-top: 20px
+            display: block
+    &.odd
+      .content
+        padding-top: 15px
+        background: var(--bg-color-dark)
+      .logo
+        background: var(--white-bg) !important
+        svg
+          color: var(--text-color-dark) !important
+      p.name
+        color: var(--text-color-light) !important
+      .serv-top-wave
+        background: var(--white-bg)
+      .serv-down-wave
+        background: var(--white-bg)
+    &.even
+      .content
+        background: var(--white-bg)
+      .logo
+        background: var(--bg-color-dark) !important
+        svg
+          color: var(--text-color-light) !important
+      p.name
+        color: var(--text-color-dark) !important
+      .serv-top-wave
+        background: var(--bg-color-dark)
+      .serv-down-wave
+        background: var(--bg-color-dark)
+    .serv-top-wave,
+    .serv-down-wave
+      position: relative
+      z-index: -1
+    .serv-top-wave
+      margin-bottom: -7px
+    .serv-down-wave
+      margin-top: -7px
+
+.services
+  footer
+    padding-top: 130px
+    border: none
+    background: unset
+    background-color: var(--bg-color-dark)
+
+@media screen and (max-width: 830px)
+  section
+    &.serv
+      .logo
+        padding: 40px !important
+
+@media screen and (max-width: 580px)
+  section
+    &.serv
+      .content
+        .container
+          flex-wrap: wrap
+          justify-content: center
+          .about
+            text-align: center
+            .description
+              text-align: start
+
+@media screen and (max-width: 512px)
+  section
+    &#services
+      .cards,
+      .row
+        gap: 40px !important
+      .card
+        width: 130px !important

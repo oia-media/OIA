@@ -1,0 +1,85 @@
+html[dir=ltr]
+  body
+    font-family: 'Helvetica', 'Cairo', sans-serif
+  header
+    .container
+      padding: 8px 0px 8px 15px
+      .translate
+        padding-left: 10px
+    .menu
+      left: -100% !important
+      .items
+        a
+          &:hover
+            padding-left: 10px !important
+            padding-right: 0 !important
+    #btn
+      display: none
+      &:checked
+        ~ .menu
+          left: 0 !important
+          right: unset
+  form
+    .row
+      .label
+        padding-left: 15px !important
+      select
+        background-position: right 1rem top 50% !important
+  #about
+    .card
+      padding-left: 15px !important
+  #contact
+    .item
+      padding-left: 20px !important
+      &::before
+        left: 0
+html[dir=rtl]
+  body
+    font-family: 'Almarai', 'Cairo', sans-serif
+  header
+    .container
+      padding: 8px 15px 8px 0px
+      .translate
+        padding-right: 10px
+    .menu
+      right: -100% !important
+      .items
+        a
+          &:hover
+            padding-right: 10px !important
+            padding-left: 0 !important
+    #btn
+      display: none
+      &:checked
+        ~ .menu
+          right: 0 !important
+          left: unset
+  form
+    .row
+      .label
+        padding-right: 15px !important
+      select
+        background-position: left 1rem top 50% !important
+  #scroll-up
+    left: 30px
+    right: unset
+  #hero
+    .description1,
+    .description2
+      line-height: 1.5
+  #about
+    p.title
+      padding-top: 10px
+    .card
+      padding-right: 15px !important
+  #contact
+    .item
+      padding-right: 20px !important
+      &::before
+        right: 0
+  @media screen and (max-width: 500px)
+    header
+      padding: 0px 30px 0px 15px!important
+    #about
+      .card
+        padding-right: 7px !important

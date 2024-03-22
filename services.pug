@@ -1,0 +1,151 @@
+- const homeLink = 'index.html#hero'
+- const aboutLink = 'index.html#about'
+- const featuresLink = 'index.html#features'
+- const clientsLink = 'index.html#clients'
+- const teamLink = 'index.html#team'
+- const meetLink = 'index.html#contact-home'
+- const opinionsLink = 'index.html#opinions'
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="OIA - Marketing Solutions | We're all about making your online presence shine. Whether you're just starting out or already a big player, we've got your back with fresh and creative strategies to get you noticed. From social media to search engine smarts, we've got the tools and the team to help your business grow online.")
+    link(rel="shortcut icon", href="assets/images/favicon.ico", type="image/x-icon")
+    include ./includes/stylesheets
+    title OIA - Marketing Solutions | Services
+  body.services
+    .wrapper
+      main
+        include ./includes/navbar
+        section.services#services
+          .container
+            h1(data-translate="services-title").title KNOW MORE ABOUT OUR SERVICES
+            .cards
+              .row
+                a(href="#digital")
+                  .card(data-aos-err="fade-up", data-aos-delay="0")
+                    .icon
+                      i.fas.fa-chart-simple
+                    p(data-translate="services-item1").name DIGITAL MARKETING
+                a(href="#branding")
+                  .card(data-aos="fade-down", data-aos-delay="150")
+                    .icon
+                      i.fas.fa-fingerprint
+                    p(data-translate="services-item2").name BRANDING
+              .row
+                a(href="#web")
+                  .card(data-aos-err="fade-up", data-aos-delay="300")
+                    .icon
+                      i.fas.fa-globe
+                    p(data-translate="services-item3").name WEB DESIGN
+                a(href="#creation")
+                  .card(data-aos="fade-down", data-aos-delay="450")
+                    .icon
+                      i.far.fa-circle-play
+                    p(data-translate="services-item4").name CONTENT CREATION
+              .row.last
+                a(href="#social")
+                  .card(data-aos-err="fade-up", data-aos-delay="600")
+                    .icon
+                      i.fab.fa-facebook
+                    p(data-translate="services-item5").name SOCIAL MEDIA MANAGEMENT
+        section.serv.odd#digital
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 1440 280', class="serv-top-wave")
+            path(fill='var(--bg-color-dark)', fill-opacity='1', d='M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,280L1392,280C1344,280,1248,280,1152,280C1056,280,960,280,864,280C768,280,672,280,576,280C480,280,384,280,288,280C192,280,96,280,48,280L0,280Z')
+          .content
+            .container
+              .col.logo
+                .icon
+                  i.fas.fa-chart-simple
+              .col.about
+                .child-col
+                  p(data-translate="services-item1-title").name DIGITAL MARKETING
+                .child-col
+                  p.description
+                    span(data-translate="services-item1-description1", data-aos-err="fade-up", data-aos-delay="0") In today's rapidly evolving digital landscape, our agency is committed to employing a multifaceted approach to effectively capture the attention of your target audience. At the heart of our strategy lies paid advertising, a dynamic tool that thrusts your brand into the spotlight and ensures instant visibility. By strategically placing ads on search engines and social media platforms, we leverage the power of pay-per-click (PPC) campaigns to drive targeted traffic to your website, delivering measurable results and a significant return on investment.
+                    span(data-translate="services-item1-description2", data-aos-err="fade-up", data-aos-delay="150") Complementing the immediacy provided by paid advertising, our content marketing approach is designed to build long-term relationships with your audience. Through the creation and distribution of valuable, relevant, and engaging content, we not only attract and retain a specific audience but also establish your brand as a thought leader in your industry. From informative articles to compelling videos and infographics, our content marketing strategy fosters a connection with your audience that goes beyond transactions, enhancing trust and loyalty.
+                    span(data-translate="services-item1-description3", data-aos-err="fade-up", data-aos-delay="300") Parallel to these efforts, our cold outreach marketing techniques provide a proactive approach to outreach, enabling us to explore new markets and attract potential customers who may not yet be aware of your brand. By crafting personalized messages and utilizing targeted email campaigns, we introduce your business to a wider audience, paving the way for new opportunities and growth. This strategic outreach ensures that your brand makes an unforgettable first impression, setting the stage for future interactions.
+                    span(data-translate="services-item1-description4", data-aos-err="fade-up", data-aos-delay="450") To amplify the reach of our content marketing and cold outreach efforts, our expertise in search engine marketing (SEM) plays a crucial role in boosting your online presence. By combining the power of search engine optimization (SEO) with paid advertising within the framework of SEM, we ensure your brand achieves prominent placement on search engine results pages. This dual approach not only increases immediate visibility through ads but also builds a sustainable online presence that continues to attract organic traffic over time.
+                    span(data-translate="services-item1-description5", data-aos-err="fade-up", data-aos-delay="600") Finally, at the core of our digital marketing strategy lies the power of paid advertising. This method provides the immediacy and precision essential for presenting your brand to the ideal audience at the most critical moments. Utilizing advanced platforms such as Google Ads, Facebook Ads, TikTok Ads, Snapchat Ads, and LinkedIn Ads, we design precisely targeted campaigns that resonate with your audience, guaranteed to deliver impactful results. Our approach is based on a deep understanding of the behaviors and needs of your target market, enabling us to create ads that effectively attract and encourage engagement.
+                    span(data-translate="services-item1-description6", data-aos-err="fade-up", data-aos-delay="750") By integrating paid advertising with other marketing strategies, we offer a robust pathway to achieving success in the contemporary digital market. Combining diverse tools and tactics ensures that your brand achieves the presence and impact necessary to meet and exceed its goals.
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 1440 280',class="serv-down-wave")
+            path(fill='var(--bg-color-dark)', fill-opacity='1', d='M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z')
+        section.serv.even#branding
+          .content
+            .container
+              .col.logo
+                .icon
+                  i.fas.fa-fingerprint
+              .col.about
+                .child-col
+                  p(data-translate="services-item2-title").name BRANDING
+                .child-col
+                  p.description
+                    span(data-translate="services-item2-description1", data-aos-err="fade-up", data-aos-delay="0") At our company, we believe that the power of branding is foundational to any success story in the modern market. Through our deep understanding of the challenges and opportunities within the digital realm, we provide integrated branding solutions that enhance your brand's value and distinguish it in a competitive marketplace.
+                    span(data-translate="services-item2-description2", data-aos-err="fade-up", data-aos-delay="150") We specialize in developing unique brand identities that build trust and establish an emotional connection with the audience. Through an analytical and innovative process, we aim to understand your vision and goals to deliver an unforgettable brand experience that reflects your company's values and underscores its core principles.
+                    span(data-translate="services-item2-description3", data-aos-err="fade-up", data-aos-delay="300") From brand analysis, where we examine the market and competitors to ensure your brand stands out, to the development of brand strategies that guide your communication and define your core message and values. We craft appealing visual identities that effectively tell your story and express the essence of your brand, emphasizing the brand experience at every customer touchpoint to ensure consistency and cohesion.
+                    span(data-translate="services-item2-description4", data-aos-err="fade-up", data-aos-delay="450") With our company, your brand is not merely a symbol of your products or services but a living story that grows and evolves with every interaction. This ensures a unique and integrated brand experience that truly reflects the spirit of your company and its aspirations.
+                    //- span(data-translate="services-item2-description5", data-aos-err="fade-up", data-aos-delay="600") Finally, at the core of our digital marketing strategy lies the power of paid advertising. This method provides the immediacy and precision essential for presenting your brand to the ideal audience at the most critical moments. Utilizing advanced platforms such as Google Ads, Facebook Ads, TikTok Ads, Snapchat Ads, and LinkedIn Ads, we design precisely targeted campaigns that resonate with your audience, guaranteed to deliver impactful results. Our approach is based on a deep understanding of the behaviors and needs of your target market, enabling us to create ads that effectively attract and encourage engagement.
+                    //- span(data-translate="services-item2-description6", data-aos-err="fade-up", data-aos-delay="750") By integrating paid advertising with other marketing strategies, we offer a robust pathway to achieving success in the contemporary digital market. Combining diverse tools and tactics ensures that your brand achieves the presence and impact necessary to meet and exceed its goals.
+        section.serv.odd#web
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 1440 280', class="serv-top-wave")
+            path(fill='var(--bg-color-dark)', fill-opacity='1', d='M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,280L1392,280C1344,280,1248,280,1152,280C1056,280,960,280,864,280C768,280,672,280,576,280C480,280,384,280,288,280C192,280,96,280,48,280L0,280Z')
+          .content
+            .container
+              .col.logo
+                .icon
+                  i.fas.fa-globe
+              .col.about
+                .child-col
+                  p(data-translate="services-item3-title").name WEB DESIGN
+                .child-col
+                  p.description
+                    span(data-translate="services-item3-description1", data-aos-err="fade-up", data-aos-delay="0") At our company, we view web design and development as essential components of your brand's digital strategy. Your website is a key part of your brand identity, acting as the primary platform where your brand's story connects with your audience.
+                    span(data-translate="services-item3-description2", data-aos-err="fade-up", data-aos-delay="150") We are experts in crafting custom websites that reflect your brand's values and goals, ensuring they are visually stunning, user-friendly, and optimized for search engines. This approach guarantees a seamless experience for your visitors across all devices, boosting your brand's online visibility and engagement.
+                    span(data-translate="services-item3-description3", data-aos-err="fade-up", data-aos-delay="300") Our team utilizes the latest technologies to create websites that are fast, secure, and scalable, catering to all your needs, whether it's an e-commerce site, a corporate website, or a personal blog. We understand the importance of your website in making a first impression, thus we focus on delivering immersive experiences that not only showcase your brand but also drive visitor conversion.
+                    span(data-translate="services-item3-description4", data-aos-err="fade-up", data-aos-delay="450") Every aspect of your website, from the strategic placement of calls to action to content that speaks in your brand's voice, is designed to complement your overall branding strategy. Our goal is to ensure your website stands out, builds brand equity, and supports your business's growth.
+                    span(data-translate="services-item3-description5", data-aos-err="fade-up", data-aos-delay="600") Let us help you create a website that truly represents your brand and engages your audience in the digital realm.
+                    //- span(data-translate="services-item3-description6", data-aos-err="fade-up", data-aos-delay="750") By integrating paid advertising with other marketing strategies, we offer a robust pathway to achieving success in the contemporary digital market. Combining diverse tools and tactics ensures that your brand achieves the presence and impact necessary to meet and exceed its goals.
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 1440 280',class="serv-down-wave")
+            path(fill='var(--bg-color-dark)', fill-opacity='1', d='M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z')
+        section.serv.even#creation
+          .content
+            .container
+              .col.logo
+                .icon
+                  i.far.fa-circle-play
+              .col.about
+                .child-col
+                  p(data-translate="services-item4-title").name CONTENT CREATION
+                .child-col
+                  p.description
+                    span(data-translate="services-item4-description1", data-aos-err="fade-up", data-aos-delay="0") At our company, we understand the pivotal role content creation plays in elevating a brand's presence and engaging its audience. Content is not just about filling your channels; it's about crafting stories that resonate, educate, and inspire your audience, while simultaneously reflecting your brand's voice and ethos.
+                    span(data-translate="services-item4-description2", data-aos-err="fade-up", data-aos-delay="150") Our expertise lies in creating bespoke content that aligns with your branding strategy, designed to captivate your target audience and reinforce your brand identity. From compelling blog posts, engaging videos, to informative infographic, we produce content that not only informs but also entertains, creating a lasting impact.
+                    span(data-translate="services-item4-description3", data-aos-err="fade-up", data-aos-delay="300") We believe in the power of content to build relationships. Our approach involves a deep dive into your brand's values and goals, ensuring every piece of content we produce serves a purpose, whether it's to drive traffic, generate leads, or increase brand awareness. Our team of skilled content creators leverages data-driven insights to craft content that speaks directly to the hearts and minds of your audience, ensuring maximum engagement.
+                    span(data-translate="services-item4-description4", data-aos-err="fade-up", data-aos-delay="450") In a world where content is king, our services extend beyond mere creation. We strategize on distribution across the right platforms to ensure your content reaches its intended audience, amplifying your brand's message across the digital landscape. Our holistic approach to content creation and distribution is designed to make your brand stand out, connect on a deeper level with your audience, and drive tangible results for your business.
+                    span(data-translate="services-item4-description5", data-aos-err="fade-up", data-aos-delay="600") Let us transform your brand's narrative with content that captivates, convinces, and converts. With us, your content will not just be seen—it will be remembered and acted upon.
+                    //- span(data-translate="services-item4-description6", data-aos-err="fade-up", data-aos-delay="750") By integrating paid advertising with other marketing strategies, we offer a robust pathway to achieving success in the contemporary digital market. Combining diverse tools and tactics ensures that your brand achieves the presence and impact necessary to meet and exceed its goals.
+        section.serv.odd#social
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 1440 280', class="serv-top-wave")
+            path(fill='var(--bg-color-dark)', fill-opacity='1', d='M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,280L1392,280C1344,280,1248,280,1152,280C1056,280,960,280,864,280C768,280,672,280,576,280C480,280,384,280,288,280C192,280,96,280,48,280L0,280Z')
+          .content
+            .container
+              .col.logo
+                .icon
+                  i.fab.fa-facebook
+              .col.about
+                .child-col
+                  p(data-translate="services-item5-title").name SOCIAL MEDIA MANAGEMENT
+                .child-col
+                  p.description
+                    span(data-translate="services-item5-description1", data-aos-err="fade-up", data-aos-delay="0") At our company, we adopt a comprehensive and specialized approach to managing social media that goes beyond simple content interaction. We understand that the key to enhancing your brand lies in effective engagement and continuous communication with your audience. Therefore, we offer social media management services that focus on responding to your audience's needs and communicating with them in a way that reflects your brand's values and message.
+                    span(data-translate="services-item5-description2", data-aos-err="fade-up", data-aos-delay="150") Audience Engagement: We consider audience engagement a vital part of our brand strategy. Therefore, we actively manage interactions, from responding to comments and private messages to participating in relevant conversations, to build a strong relationship with your audience.
+                    span(data-translate="services-item5-description3", data-aos-err="fade-up", data-aos-delay="300") Responding to Inquiries: We ensure quick and detailed responses to all your audience's inquiries, enhancing their trust in your brand and reflecting your commitment to customer service.
+                    span(data-translate="services-item5-description4", data-aos-err="fade-up", data-aos-delay="450") Monitoring Comments and Crisis Response: We closely monitor comments and conversations to effectively deal with any negative feedback or potential crises, protecting your brand's reputation.
+                    span(data-translate="services-item5-description5", data-aos-err="fade-up", data-aos-delay="600") Performance Analysis and Reporting: We provide periodic analytics that show your brand's performance on social media, enabling us to adjust strategies according to trends and audience preferences.
+
+                    span(data-translate="services-item5-description6", data-aos-err="fade-up", data-aos-delay="750") At our company, we treat social media as a vital tool for building and enhancing your relationship with your audience. By managing social media strategically and effectively, we ensure that your brand is always at the heart of the conversation, enhancing its market position and contributing to the growth of your business.
+        include ./includes/footer
+
+//- pug "H:\OAI Omar yehia\services.pug" -w -o "H:\OAI Omar yehia"
