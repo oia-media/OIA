@@ -50,7 +50,7 @@ const translations = {
     "features-items-description":
       "Of course your organization needs a stunning look, you just don't worry about it, It's on US!",
     "features-card1": "BRANDING",
-    "features-card2": "WEB DEVELOPMENT",
+    "features-card2": "WEB DESIGN",
     "features-card3": "CONTENT CREATION",
     "features-card4": "SOCIAL MEDIA MANAGEMENT",
     // Clients Section
